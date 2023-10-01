@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="todoContainer">
+      <h1>Todo list</h1>
+      <p class="tareaInfo">Nueva tarea</p>
+      <div class="divNewTodo">
+        <input class="inputTodo" />
+        <button class="addToDo">Agregar</button>
+      </div>
+      <div class="toDoInfo">
+        <div class="taskNumber">
+          <p>Total:</p>
+          <p>Realizadas:</p>
+        </div>
+        <div class="taskInfo">
+          <div class="taskId">
+            ID
+            <ul>
+              <li class="idList"></li>
+            </ul>
+          </div>
+          <div class="taskName">
+            Tarea
+            <ul>
+              <li class="taskList"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttonContainer">
+          <div>
+            <br />
+            <ul class="completeButton"></ul>
+          </div>
+          <div>
+            <br />
+            <ul class="deleteButton"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/toDo.js"></script>
+  </body>
+</html>
