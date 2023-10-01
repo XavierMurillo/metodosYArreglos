@@ -76,6 +76,8 @@ function addElement(toDoList) {
   }
   if (newTaskValue == "") {
     alert("Ingrese una tarea");
+  } else if (toDoList.findIndex((task) => task.tarea == newTaskValue) != -1) {
+    alert("No se permiten tareas duplicadas");
   } else {
     let newTask = { id: id, tarea: newTaskValue, completado: false };
     toDoList.push(newTask);
